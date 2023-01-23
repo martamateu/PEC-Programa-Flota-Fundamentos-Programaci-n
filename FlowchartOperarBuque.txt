@@ -1,0 +1,42 @@
+Ingresar fecha de comienzo de la operación (día, mes, año)✅
+¿Fecha valida? ✅
+Verificar que la fecha de comienzo de la operación sea posterior a la última operación del buque✅
+Ingresar identificador del buque (A-E) ✅
+Verificar que el buque exista✅
+Estado Buque✅
+Si el buque está vacío:
+      a. Preguntar si se desea cargar ✅
+            Si se desea cargar: 
+                                        i. Que se puede cargar por el tipo de puerto de origen✅
+                  ii. Pedir duración de la carga ✅
+                  iii. Saltar a paso traslado ✅     
+            Si no se desea cargar:
+                  i. Saltar a paso traslado✅
+Si el buque está cargado:
+      a. Preguntar si se desea trasladar 
+            Si se desea trasladar:
+                  i. Verificar que el origen y el destino no sean el mismo ✅
+                  ii. Verificar que el trayecto tenga sentido para el tipo de carga ✅
+                  iii. Pedir puerto destino y duración del traslado ✅
+       b. Si no se desea trasladar:
+                  i. Saltar a paso descarga✅
+                  
+
+Preguntar si se desea descargar
+            Si se desea descargar:
+                  a. Verificar que el puerto de descarga sea compatible con el tipo de carga que 
+                  se quiere descargar✅
+                  b. Pedir duración de la descarga✅
+            Si no se desea descargar:
+                  a. Saltar a paso preguntar si es correcta la operación✅
+
+
+
+Mostrar resumen de la operación ✅
+
+Preguntar si la operación es correcta ✅
+
+            Si la operación es correcta:
+                  a. Realizar operación y volver al menú principal
+            Si la operación no es correcta:
+                  a. Volver al menú principal
